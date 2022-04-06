@@ -17,8 +17,8 @@ hàm main của chương trình
 -hàm `encrypt` nhận 1 tham số là input nhập vào 
 ![](ida2.png)
 
--hàm `encrypt` gọi hàm `dump_shellcode` 122 lần với tham số truyền vào trong mảng `v3`
 
+-hàm `encrypt` gọi hàm `dump_shellcode` 122 lần với tham số truyền vào trong mảng `v3`
 
 #### hàm `dump_shellcode`
 -biến `a1` có thể là `1`, `2`, `3`, `4` là 4 giá trị của switch để xor ra shellcode trong 4 trường hợp, debug tại đây để dump ra 4 đoạn shellcode 
