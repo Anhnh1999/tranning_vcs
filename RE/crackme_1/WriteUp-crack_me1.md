@@ -9,12 +9,14 @@ load file vào ida32
 ### IDA
 hàm main của chương trình 
 ![](ida1.png)
+
 -chương trình yêu cầu nhập vào tối thiểu `294`ký tự của input rồi input được truyền tham số vào hàm `encrypt`
 
 
 #### hàm `encrypt` 
 -hàm `encrypt` nhận 1 tham số là input nhập vào 
 ![](ida2.png)
+
 -hàm `encrypt` gọi hàm `dump_shellcode` 122 lần với tham số truyền vào trong mảng `v3`
 
 
