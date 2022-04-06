@@ -1,4 +1,5 @@
 kiểm tra file thấy đây là file thực thi PE32 của windows
+
 ![](file.png)
 
 thực hiện chạy thử file thấy file yêu cầu nhập password, nếu nhập sai thì sẽ hiện ra `oh, no!`
