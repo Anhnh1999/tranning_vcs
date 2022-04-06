@@ -15,7 +15,13 @@ hàm main của chương trình
 
 #### hàm `encrypt` 
 -hàm `encrypt` nhận 1 tham số là input nhập vào 
+
 ![](ida2.png)
+
+
+
+
+
 
 
 -hàm `encrypt` gọi hàm `dump_shellcode` 122 lần với tham số truyền vào trong mảng `v3`
