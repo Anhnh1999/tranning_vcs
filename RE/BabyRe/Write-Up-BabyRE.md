@@ -1,4 +1,5 @@
 kiểm tra file thấy đây là file thực thi PE32 của windows
+
 ![](file.png)
 
 load file vào ida32
