@@ -33,7 +33,13 @@ hàm main của chương trình
 
 #### `shellcode 1`
 shellcode 1 encode input bằng cách xor
+
+
 ![](shellcode1.png)
+
+
+
+
 
 
 
