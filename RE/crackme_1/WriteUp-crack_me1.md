@@ -35,6 +35,10 @@ hàm main của chương trình
 shellcode 1 encode input bằng cách xor
 ![](shellcode1.png)
 
+
+
+
+
 #### `shellcode 2`
 shellcode 2 thực hiện ghép 2 ký tự liền kề của input lại làm 1 word rồi dịch bit rồi xor vơi `0x1693`
 ![](shellcode2.png)
