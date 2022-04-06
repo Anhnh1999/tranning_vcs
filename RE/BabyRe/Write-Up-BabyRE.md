@@ -1,5 +1,6 @@
 kiểm tra file thấy đây là file thực thi PE32 của windows
 ![](file.png)
+
 load file vào ida32
 ###IDA
 ![](ida1.png)
@@ -22,6 +23,7 @@ ord('Q') ^ ord('{') = 42
 
 -còn lại 2 ký vị trí `1` và `3` của key thì cũng thực hiện phép biến đổi thông qua phép xor nhưng phức tạp hơn
  ![](ida2.png)
+ 
 -tuy nhiên vì sử dụng phép xor nên có thể đoán được do đã có format của flag bằng cách xor ngược lại
 
 ```python
