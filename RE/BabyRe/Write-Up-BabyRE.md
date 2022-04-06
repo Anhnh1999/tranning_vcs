@@ -23,6 +23,7 @@ ord('Q') ^ ord('{') = 42
 ```
 
 -còn lại 2 ký vị trí `1` và `3` của key thì cũng thực hiện phép biến đổi thông qua phép xor nhưng phức tạp hơn
+
  ![](ida2.png)
  
 -tuy nhiên vì sử dụng phép xor nên có thể đoán được do đã có format của flag bằng cách xor ngược lại
@@ -32,6 +33,5 @@ ord('l') ^ ord('d') =  8
 ord('g') ^ ord('p') = 23
 ```
 từ đây có được 5 số của key là `4` `8` `15` `23` `42`
-![](flag.png)
 
 `flag{easy_baby_challenge}`
