@@ -55,7 +55,7 @@ load file vào ida32
 ![](patch6.png)
 
 
-- `key[7]` bị thay đổi bằng cách sử dụng `CreateToolhelp32Snapshot` để check xem có các process của VMware không, bypass bằng cách cho `key[1]` luôn bằng 1 theo luồng thực thi 
+- `key[7]` bị thay đổi bằng cách sử dụng `CreateToolhelp32Snapshot` để check xem có các process của VMware không, bypass bằng cách cho `key[1]` luôn bằng `byte_AC3B28[1]` theo luồng thực thi 
 
 
 ![](patch7.png)
