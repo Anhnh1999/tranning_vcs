@@ -49,7 +49,7 @@ load file vào ida32
 ![](patch5.png)
 
 
-- `key[6]` bị thay đổi bằng cách check xem có 2 file `\\\\.\\HGFS` hoặc `\\\\.\\vmci` không, bypass bằng cách cho `key[6]` luôn bằng 14 theo luồng thực thi 
+- `key[6]` bị thay đổi bằng cách check xem có 2 file `\\\\.\\HGFS` hoặc `\\\\.\\vmci` không, bypass bằng cách cho `key[6]` luôn bằng `byte_AC3B28[14]` theo luồng thực thi 
 
 
 ![](patch6.png)
