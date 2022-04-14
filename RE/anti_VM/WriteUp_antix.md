@@ -60,7 +60,7 @@ load file vào ida32
 
 ![](patch7.png)
 
-- `key[8]` sử dụng `EnumSystemFirmwareTables` với `FirmwareTableProviderSignature là RSMB` để check xem có cụm từ `VMware` không, nếu có thì gán `key[8] == byte_AC3B28[11]`, không thì `key[8] == byte_AC3B28[10]`, có thể bypass bằng cách patch thằng `key[8] == 0x4C`(byte_AC3B28 == 0x4C)
+- `key[8]` sử dụng `EnumSystemFirmwareTables` với `FirmwareTableProviderSignature là RSMB` để check xem có cụm từ `VMware` không, nếu có thì gán `key[8] == byte_AC3B28[11]`, không thì `key[8] == byte_AC3B28[10]`, có thể bypass bằng cách patch thẳng `key[8] == 0x4C`(byte_AC3B28 == 0x4C)
 
 
 ![](patch8.png)
