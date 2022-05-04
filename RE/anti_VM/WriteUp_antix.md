@@ -49,18 +49,18 @@ load file vào ida32
 ![](patch5.png)
 
 
-- `key[6]` bị thay đổi bằng cách check xem có 2 file `\\\\.\\HGFS` hoặc `\\\\.\\vmci` không, bypass bằng cách cho `key[6]` luôn bằng 14 theo luồng thực thi 
+- `key[6]` bị thay đổi bằng cách check xem có 2 file `\\\\.\\HGFS` hoặc `\\\\.\\vmci` không, bypass bằng cách cho `key[6]` luôn bằng `byte_AC3B28[14]` theo luồng thực thi 
 
 
 ![](patch6.png)
 
 
-- `key[7]` bị thay đổi bằng cách sử dụng `CreateToolhelp32Snapshot` để check xem có các process của VMware không, bypass bằng cách cho `key[1]` luôn bằng 1 theo luồng thực thi 
+- `key[7]` bị thay đổi bằng cách sử dụng `CreateToolhelp32Snapshot` để check xem có các process của VMware không, bypass bằng cách cho `key[1]` luôn bằng `byte_AC3B28[1]` theo luồng thực thi 
 
 
 ![](patch7.png)
 
-- `key[8]` sử dụng `EnumSystemFirmwareTables` với `FirmwareTableProviderSignature là RSMB` để check xem có cụm từ `VMware` không, nếu có thì gán `key[8] == byte_AC3B28[11]`, không thì `key[8] == byte_AC3B28[10]`, có thể bypass bằng cách patch thằng `key[8] == 0x4C`(byte_AC3B28 == 0x4C)
+- `key[8]` sử dụng `EnumSystemFirmwareTables` với `FirmwareTableProviderSignature là RSMB` để check xem có cụm từ `VMware` không, nếu có thì gán `key[8] == byte_AC3B28[11]`, không thì `key[8] == byte_AC3B28[10]`, có thể bypass bằng cách patch thẳng `key[8] == 0x4C`(byte_AC3B28 == 0x4C)
 
 
 ![](patch8.png)
