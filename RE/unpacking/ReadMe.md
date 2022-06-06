@@ -214,9 +214,7 @@ từ đây set breakpoint tại `VirtualProtect`
 ![](x64_6.1.png)
 
 - chạy 2 lần thì thấy ở đây `VirtualProtect` đang xét quyền `PAGE_EXECUTE_READWRITE = 0x40` cho section .text 
-
 ![](x64_6.2.png)
-
 ![](x64_6.3.png)
 
 - chạy đến khi `VirtualProtect` return thì set lại quyền cho .text section là `PAGE_READWRITE`
